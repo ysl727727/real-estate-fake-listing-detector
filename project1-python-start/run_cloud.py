@@ -76,6 +76,7 @@ for q in questions:
             model=CLOUD_MODEL,
             messages=messages,
             temperature=1,
+            seed=42,
             max_completion_tokens=config.OPTIONS["num_predict"],
         )
     except Exception as e:
